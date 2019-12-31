@@ -7,89 +7,106 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Press any square to start."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="354dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
 
-            <Button
+            <com.example.tictactoe.NewButton
                 android:id="@+id/b9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="buttonPress" />
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="restartGame"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
