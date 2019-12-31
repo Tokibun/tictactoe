@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class TwoPlayerTTTActivity extends AppCompatActivity {
 
     Player player = Player.PLAYERX;
     int turnCount = 0;
